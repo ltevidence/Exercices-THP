@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+<body>
+<h1>Editer ton potin :</h1>
+<p>Edite le potin n°<%= params['id']%></p>
+<% gossips.each do |gossip| %>
+<h2>Son auteur est : <%= gossip.author %></h2>
+<h2>Le contenu : <%= gossip.content %></h2></br>
+<% end %>
+    <form action='/gossips/edit/' method='POST'>
+      Saisi ici ton nom :  <input type='text' name='gossip_author'/><br/>
+      Modifie le potin ici: <input type='text' name='gossip_content'/><br/>
+      <input type='submit'/>
+</html>

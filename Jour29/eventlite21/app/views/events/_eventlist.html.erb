@@ -1,0 +1,21 @@
+  <div class="container">
+    <div class="row">
+     <% @events.reverse_each do |event| %>
+      <div class="col-lg-3">
+        <div class="bs-component">
+          <div class="card border-primary mt-2 mb-2 d-flex">
+            <div class="card-body flex-fill">
+              <h4 class="card-title"><%=event.title%></h4>
+              <%= image_tag event.try(:avatar), alt: 'avatar',class:"img-event shadow"%>
+              <h5 class="card-title"><%= event.start_date %>, <%= event.duration %> min</h5>
+              <h5 class="card-title">Description</h5><p class="card-text"><%= event.description %></p>
+                <br><a href="/users/participants_list.html">Nombre de participants :</a>
+              <button type="button" class="btn btn-secondary"><a href="/events/<%=event.id%>">En savoir plus</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <% end%>
+       </div>
+       </div>
+

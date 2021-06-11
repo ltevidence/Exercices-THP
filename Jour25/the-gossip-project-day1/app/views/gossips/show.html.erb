@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <%= link_to "The Gossip Project", gossips_path, class:"nav-bar-brand"%>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+     <li class="nav-item active">
+        <li class="nav-item"><%= link_to "Accueil", gossips_path, class:"btn btn-primary"%></li>
+        <li class="nav-item"><%= link_to "Team", team_path, class: "nav-link"%></li>
+        <li class="nav-item"><%= link_to "Contact", contact_path, class:"nav-link" %></li>
+     </li>
+   </ul>
+ </div>
+</nav>
+<h1 class="d-flex justify-content-center">Voici la page du Gossip n°<%= params[:id]%> !</h1><br>
+<div class="row justify-content-center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= @gossip.title%></h5>
+    <h5 class="card-title"></h5>
+    <h3 class="card-title"></h3>
+    <p class="card-text","><%= @gossip.content%> </p>
+    <button class="btn btn-primary d-flex justify-content-center" >
+    <%= link_to "#{Gossip.find(params[:id]).user.first_name} #{Gossip.find(params[:id]).user.last_name}", User.find(params[:id]),class:"btn btn-primary d-flex justify-content-center" %></button>
+   </div>
+    </div>
+</div>
+</body>
+</html>

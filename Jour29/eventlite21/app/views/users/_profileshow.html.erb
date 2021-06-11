@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Eventlite : Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://kit.fontawesome.com/82779c9172.js" crossorigin="anonymous"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23019901-1"></script>
+  </head>
+<div class="col-lg-8 col-align-center">
+  <div class="bs-component">
+    <div class="card mb-3 bg-light">
+      <h3 class="card-header"><%=@user.first_name%> <%=@user.last_name%></h3>
+      <div class="card-body">
+    </div>
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card-body">
+            <%= image_tag ("placeholder"), alt: 'avatar',class:"avatar d-block user-select-none"%>
+            <hr>
+          <h5 class="card-text"><%= @user.first_name%></h5>
+          <h5 class="card-text"><%= @user.last_name %></h5>
+          <h5 class="card-text"><%= @user.email %></h5>
+        </div>
+        <hr>
+          <div class="card-body author">
+        <div class="social">
+        <h1 class="fab fa-twitter-square text-secondary"></h1>
+        <h1 class="fab fa-google-plus-square text-primary"></h1>
+        <h1 class="fab fa-facebook-square text-secondary"></h1>
+        <h1 class="fab fa-github-square text-primary"></h1>
+      </div>
+      </div>
+    </div>
+      <div class="col-lg-8">
+      <div class="card-body">
+        <h3 class="card-text text-center">Description</h3>
+        <br>
+        <p class="card-text description"><p class="card-text"><%= @user.description%></p>
+          
+      </div>
+      </div>
+      <div class="card-footer bg-primary text-light">
+      <caption>Profil crée le <%=@user.created_at%></caption>
+      </div>
+  </div>
+
+    </div>
+    </div>
+
+  </body>
+    </html>
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', events_path %>

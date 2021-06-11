@@ -1,0 +1,1 @@
+puts "Bienvenue à tous ! Hello World! pour les intimes !"

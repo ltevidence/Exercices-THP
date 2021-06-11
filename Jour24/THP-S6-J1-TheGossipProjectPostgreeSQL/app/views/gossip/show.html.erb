@@ -1,0 +1,12 @@
+<div class="view">
+  <h1>Bienvenue, voici le gossip n°<%= @id %>.</h1>
+</div>
+
+<div class="card m-3" style="max-width: 800px;">
+  <div class="card-header text-dark"><a href="/user/<%= @id %>"><%= Gossip.find(@id).user.first_name %></a></div>
+  <div class="card-body">
+    <h5 class="card-title"><%= Gossip.find(@id).title %></h5>
+    <p class="card-text"><%= Gossip.find(@id).content %></p>
+    <a href="#" class="btn btn-success">Comment</a>
+  </div>
+</div>

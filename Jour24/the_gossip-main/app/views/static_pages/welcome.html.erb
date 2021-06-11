@@ -1,0 +1,40 @@
+<div class = "jumbotron">
+
+
+    <h1>Bienvenue sur The Gossip Project !</h1>
+
+
+		<h4>Viens assouvir tes plus basses pulsions et bitcher sur tes "potes".</h4>
+		</br>
+		<%= link_to "contact", '/contact' %> , <%= link_to "team", '/team' %>
+
+       </div>
+
+		</br>
+
+<section>
+<div class="card-deck">
+<%Gossip.all.each do |gossip|%>
+<div class="col-sm-4 mb-3">
+<div class="card">
+  <div class="card-header"
+  
+  </div>
+  <div class="card-body align-center">
+    <blockquote class="blockquote mb-0">
+      <p><%=gossip.title%></p>
+      <footer class="blockquote-footer">
+      <div class="row justify-content-between align-self-center mx-3">
+        <p><%=User.find(gossip.user_id).first_name%> <%=User.find(gossip.user_id).last_name%></p>
+    
+      </div>
+      </footer>
+    </blockquote>
+  </div>
+</div>
+</div>
+<%end%>
+</div>
+</section>
+
+

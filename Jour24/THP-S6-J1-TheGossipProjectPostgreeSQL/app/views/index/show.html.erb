@@ -1,0 +1,19 @@
+<div class="view">
+  <h1>Bienvenue, voici tous les gossips.</h1>
+</div>
+
+<div class="row m-3">
+
+    <% @gossips.each_with_index do |gossip| %>
+
+      <div class="card text-white bg-success col-sm-6 col-md-4 col-md-3 col-xl-2">
+        <a class="card-header text-white" href="gossip/<%= gossip.id %>">Potin n°<%= gossip.id %></a>
+        <div class="card-body">
+        <h5 class="card-title"><%= gossip.user.first_name %></h5>
+          <p class="card-text"><%= gossip.title %></p>
+        </div>
+      </div>
+
+    <% end %>
+
+</div>

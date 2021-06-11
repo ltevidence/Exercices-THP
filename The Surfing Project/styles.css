@@ -1,0 +1,22 @@
+  .my-header {
+    margin-top: 10px;
+    background-image: url(../The\ Surfing\ Project/img/header.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .head-text {
+    margin-top: 20%;
+    color: white;
+  }
+/** Deuxieme partie **/
+
+.fas {
+  font-size: 150px;
+  margin-bottom: 10%;
+}
+
+.btn-join:hover button {
+  color: white;
+}

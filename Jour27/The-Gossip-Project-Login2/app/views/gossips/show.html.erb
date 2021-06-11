@@ -1,0 +1,14 @@
+<body>
+<h1 class="d-flex justify-content-center">Voici la page du Gossip n°<%= params[:id]%> !</h1><br>
+<div class="row justify-content-center">
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= @gossip.title%></h5>
+    <h3 class="card-title"></h3>
+    <p class="card-text"><%= @gossip.content%> </p>
+    <a href= "/users/<%=@gossip.user.id%>" class="btn btn-info d-flex justify-content-center"><%= @gossip.user.first_name + " " +  @gossip.user.last_name%></a>
+   </div>
+    </div>
+</div>
+</body>
+</html>

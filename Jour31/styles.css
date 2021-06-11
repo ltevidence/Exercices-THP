@@ -1,0 +1,193 @@
+/* UI KIT */
+
+/*Colors */
+
+.primary {color: #D8973C;}
+.secondary {color: #3581B8;}
+.third {color: #c7efcf;}
+.dark {color: #3C3C3C}
+.grey {color: #676767;}
+.md-light-grey {color: #A7A7A7;}
+.light-grey {color: #D2D2D2;}
+.danger {color: #CE0000;}
+.success {color: #7ED18E;}
+.warning {color: #FFC700}
+.info {color: #00B3EC;}
+
+/* Fonts */
+
+.text-primary {color: #D8973C;}
+.text-secondary {color: #3581B8;}
+.text-third {color: #c7efcf;}
+.text-dark {color: #3C3C3C}
+.text-grey {color: #676767;}
+.text-md-light-grey {color: #A7A7A7;}
+.text-light-grey {color: #D2D2D2;}
+.text-danger {color: #CE0000;}
+.text-success {color: #7ED18E;}
+.text-warning {color: #FFC700}
+.text-info {color: #00B3EC;}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+lead { 
+font-family: 'Nunito', sans-serif;
+font-size: 1.2rem;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+}
+
+
+blockquote {
+font-family: 'Nunito', sans-serif;
+font-size: 14px;
+font-style: italic;
+}
+
+/* Buttons*/
+
+.btn-primary { background-color: #D8973C; }
+.btn-secondary { background-color: #3581B8; }
+.btn-third { background-color: #c7efcf; }
+.btn-dark {background-color: #3C3C3C;}
+.btn-grey { background-color: #676767; }
+.btn-md-light-grey { background-color: #A7A7A7; }
+.btn-light-grey { background-color: #D2D2D2; }
+.btn-warning { background-color: #FFC700; }
+.btn-success { background-color: #7ED18E; }
+.btn-info { background-color: #00B3EC; }
+.btn-danger { background-color: #CE0000; }
+
+.btn {
+  width: 190px;
+  height: 40px;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.radio-input {
+  display: block;
+  width: fit-content;
+}
+
+/********************************************************************/
+
+
+
+
+/* Made only for this webpage */
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+div.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.title-font {
+  width: fit-content;
+}
+.underline {
+  text-decoration: underline;
+}
+.separator {
+  background-color: #A7A7A7;
+  width: 1px;
+}
+.body-font {
+  width: fit-content;
+}
+
+.title {
+  color: #D8973C;
+}
+.subtitle {
+  color: #3581B8;
+}
+.inputs {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Color palette */
+.palette {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.color {
+  width: 188px;
+  height: 43px;
+  margin-bottom: 34px;
+}
+.color.primary { background-color: #D8973C; }
+.color.secondary { background-color: #3581B8; }
+.color.third { background-color: #c7efcf; }
+.color.dark {background-color: #3C3C3C;}
+.color.grey { background-color: #676767; }
+.color.md-light-grey { background-color: #A7A7A7; }
+.color.light-grey { background-color: #D2D2D2; }
+
+/* button palette */
+
+.color.warning { background-color: #FFC700; }
+.color.success { background-color: #7ED18E; }
+.color.info { background-color: #00B3EC; }
+.color.danger { background-color: #CE0000; }
+
+.icon-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+thead,
+tfoot {
+    background-color: #7ED18E;
+    color: #676767;
+}
+
+td {
+  padding: 10px;
+}
+.fas {
+  font-size: 4em;
+}
+

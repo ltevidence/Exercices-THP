@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">The Gossip Project</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+     <li class="nav-item active">
+        <li class="nav-item"><%= link_to "Accueil", index_path, class: "btn btn-primary"%></li>
+        <li class="nav-item"><%= link_to "Team", team_path, class: "nav-link"%></li>
+        <li class="nav-item"><%= link_to "Contact", contact_path, class:"nav-link" %></li>
+     </li>
+   </ul>
+ </div>
+</nav>
+
+<h1 class="text-center p-3"> Salut à toi <%= params[:potineur]%> !</h1>
+
+<h1 class="text-center p-3"> Voici la liste des potins, rattachés à leur auteur : </h1>
+
+<% for i in 0..Gossip.count - 1 %>
+
+<p> <%= Gossip.all[i].user.first_name%>  <%= Gossip.all[i].user.last_name%> a écrit le gossip suivant : Titre : " <%= Gossip.all[i].title%> "; Contenue : " <%= Gossip.all[i].content%> "</p>
+
+<%end%>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+

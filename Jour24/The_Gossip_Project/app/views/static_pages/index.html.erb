@@ -1,0 +1,25 @@
+<DOCTYPE>
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">The Gossip Project</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><%= link_to "Accueil", static_pages_index_path, class:"nav-link active"%></li>
+        <li class="nav-item"><%= link_to "Team", static_pages_team_path, class: "nav-link"%></li>
+        <li class="nav-item"><%= link_to "Contact", static_pages_contact_path, class:"nav-link" %></li>
+      </ul>
+    </header>
+    <%  gossips.each do |gossip| %>
+  <h1>Voici la liste des potins :</h1>
+<h2>Son auteur est : <%= gossip.author %></h2>
+<h2>Le contenu : <%= gossip.content %></h2></br>
+<% end %>
+  </body>
+</html>

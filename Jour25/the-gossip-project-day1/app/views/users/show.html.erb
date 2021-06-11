@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">The Gossip Project</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+     <li class="nav-item active">
+        <li class="nav-item"><%= link_to "Accueil", gossips_path, class:"btn btn-primary"%></li>
+        <li class="nav-item"><%= link_to "Team", team_path, class: "nav-link"%></li>
+        <li class="nav-item"><%= link_to "Contact", contact_path, class:"nav-link" %></li>
+     </li>
+   </ul>
+ </div>
+</nav>
+
+<h1 class="text-center p-3"> Salut à toi potineur n°<%= params[:id]%> !</h1>
+
+<h1 class="text-center p-3"> Voici tes informations personnelles ultra secrètes </h1>
+
+
+
+
+<pre>
+Nom : <%= @users.first_name %>
+Prénom : <%= @users.last_name %>
+Description : <%= @users.description %>
+Age : <%= @users.age %>
+City : <%= @users.city.name %>
+</pre>
+
+</body>
+
+</html>
+
+
+

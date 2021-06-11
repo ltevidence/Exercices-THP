@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">The Gossip Project</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul class="navbar-nav mr-auto">
+     <li class="nav-item active">
+        <li class="nav-item"><%= link_to "Accueil", index_path, class:"btn btn-primary"%></li>
+        <li class="nav-item"><%= link_to "Team", team_path, class: "nav-link"%></li>
+        <li class="nav-item"><%= link_to "Contact", contact_path, class:"nav-link" %></li>
+     </li>
+   </ul>
+ </div>
+</nav>
+ <%= link_to "clique ici" %>
+<table>
+  <thead>
+      <tr>
+        <th>Author</th>
+        <th>Title</th>
+      </tr>
+  </thead>
+  <tbody>
+    <%Gossip.all.each do |gossip|%>
+    <tr>
+        <td> <%= gossip.user.first_name + ' ' + gossip.user.last_name %></td>
+        <td><%= gossip.title %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</body>
+</html>
+
+
+<!-- >

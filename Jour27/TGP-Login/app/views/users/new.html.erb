@@ -1,0 +1,41 @@
+<body class="bg-info">
+
+<h1 class="d-flex justify-content-center text-white pt-5">S'inscrire</h1>
+<div class="panel panel-default">
+<div class="panel-body">
+<%= form_tag url_for(action: 'create'), method: "post", class:"form-horizontal" do %>
+<div class="form-group">
+<div class="col-md-5 d-flex-end">
+<%= label_tag 'Nom' %>
+<%= text_field_tag 'first_name', @user.first_name , class:"form-control"%>
+<%= label_tag 'Prenom'%>
+<%= text_field_tag 'last_name', @user.last_name , class:"form-control"%>
+<%= label_tag 'Age' %>
+<%= text_field_tag 'age', @user.age , class:"form-control"%>
+<%= label_tag 'Email'%>
+<%= text_field_tag 'email', @user.email , class:"form-control"%>
+<%= label_tag 'Mot de passe' %>
+<%= text_field_tag 'password', @user.password , class:"form-control"%>
+<%= label_tag 'Confirmation de mot de passe' %>
+<%= text_field_tag 'password_confirmation', @user.password_confirmation , class:"form-control"%>
+<%= label_tag 'Description'%>
+<%= text_area_tag 'description', @user.description , class:"form-control"%>
+<br /> <br />
+<%= submit_tag "Sign Up", class:"btn btn-warning" %>
+
+<% if @user.errors.any? %>
+<p>Impossible de s'inscrire pour la (ou les) raison(s) suivante(s) :</p>
+<ul>
+  <% @user.errors.full_messages.each do |message| %>
+  <li><%= message %></li>
+  <% end %>
+</ul>
+<% end %>
+<% end %>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+</body>
