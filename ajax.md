@@ -1,4 +1,4 @@
-#AJAX, Une nouvelle approche aux applications web.
+# AJAX, Une nouvelle approche aux applications web.
 
 S’il y a bien une chose qu’on peut considérer comme « glamour » au sujet des design d’interaction actuel c’est créé des applications web. Après tout, quand est-ce que vous avez entendu pour la dernière fois quelqu’un vanter les mérites d’un design d’interaction fait pour un produit autre que numérique ? (Oui, d’accord, en dehors de l’iPod.)
 Tous les projets innovants et tendances sont en ligne.
