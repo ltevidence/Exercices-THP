@@ -28,7 +28,7 @@ La plupart des actions de l’utilisateur sur l’interface lance une requête H
 C’est un modèle qui était adapté au premier usage du web c’est a dire un média traitant de l’hypertexte.
 Mais les aficionados de « The Elements of User Experience » le savent bien, ce qui fait que le Web est bon pour l’hypertexte n’est pas forcément bon pour une application logicielle.
 
-![Zozor](https://res.cloudinary.com/dcmcouvju/image/upload/v1625042840/Modele_Classique_App_Web_g0pvzb.png)
+![Zozor](https://res.cloudinary.com/dcmcouvju/image/upload/v1625042888/Group_1_1_nejvrn.png)
 Fig 1. Le modèle traditionnel d’application web (à gauche) comparé au modèle Ajax (à droite).
 
 Cette approche fait sens d’un point de vue technique, mais n’est pas forcément évidente en terme d’expérience utilisateur. Pendant que le serveur travaille de son côté, que fait le client ? 
