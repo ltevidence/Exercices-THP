@@ -17,11 +17,11 @@ Ajax n’est pas une technologie.
 Il s’agit de plusieurs technologies, chacune progressants de son coté et qui se développent ensemble pour donner lieu à de nouvelles possibilités très puissantes. 
 Ajax incorpore : 
 
-Du XHTML et CSS comme standard de la présentation.
-De l’affichage et des interactions dynamiques avec le DOM(Document Object Model)
-De l’échange et de la manipulation de données avec le XML XSLT.
-De la récupération de données asynchrones avec XMLHttpRequest
-Et enfin du JavaScript pour lier le tout.
+* Du XHTML et CSS comme standard de la présentation.
+* De l’affichage et des interactions dynamiques avec le DOM(Document Object Model)
+* De l’échange et de la manipulation de données avec le XML XSLT.
+* De la récupération de données asynchrones avec XMLHttpRequest
+* Et enfin du JavaScript pour lier le tout.
 
 Le schema classique des applications web fonctionne ainsi : 
 La plupart des actions de l’utilisateur sur l’interface lance une requête HTTP vers le serveur web. Le serveur traite les informations, récupère des données, fait des calcules et interagit avec différents systèmes de réseau, après ce traitement il renvoie à l’utilisateur une page HTML.
