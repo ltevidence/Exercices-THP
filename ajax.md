@@ -11,7 +11,7 @@ Mais ce fossé se résorbe. Jetez un coup d’oeil à Google Suggest et remarque
 Google Suggest et Google Maps sont deux exemples de cette nouvelle approche que nous appelons, ici à Adaptive Path, AJAX.
 Ce nom est un acronyme pour « Asynchronous JavaScript + XML » et représente les fondements de nouvelles possibilités sur Internet.
 
-## 1. Definir AJAX
+**## 1. Definir AJAX**
 
 Ajax n’est pas une technologie. 
 Il s’agit de plusieurs technologies, chacune progressants de son coté et qui se développent ensemble pour donner lieu à de nouvelles possibilités très puissantes. 
@@ -37,7 +37,7 @@ Eh bien oui, il attend. Et à chaque étape, l’utilisateur doit attendre toujo
 Evidemment, si on concevait Internet à nouveau du point de vue applicatif, on ne ferait pas attendre l’utilisateur aussi longtemps. 
 Une fois que l’interface est chargée, pourquoi les interactions utilisateurs devrait s’arrêter à chaque fois que l’application lance une requête vers le serveur ? Pourquoi l’utilisateur devrait se rendre compte des interactions entre l’application et le serveur ?
 
-## 2. Qu’est-ce qui est différent avec Ajax. ?
+**## 2. Qu’est-ce qui est différent avec Ajax. ?**
 
 Une application Ajax élimine cette nature « marche/arrêt/marche/arrêt » dans les interactions sur Internet en ajoutant un intermédiaire, l’Ajax engine, entre l’utilisateur et le serveur. 
 On pourrait croire qu’ajouter une couche sur l’application la rendrait moins responsive mais c’est l’opposée. 
@@ -50,7 +50,7 @@ Fig 2. Le schéma d’interaction synchrone d’une application web classique (e
 Chaque action de l’utilisateur devrait normalement générer une requête HTTP mais prend ici la forme d’un appel JavaScript auprès de l’Ajax engine. Toutes réponses aux actions de l’utilisateur qui ne demanderait aucune nouvelle requête auprès du serveur, tel que la simple validation de données, éditer de la donnée en mémoire ou même de la simple navigation sur l’application, passe par le moteur Ajax. 
 Si le moteur à besoin d faire une requête au serveur pour pouvoir répondre, s’il soumet de la donnée, effectue des calculs, charge des éléments d’interfaces additionnels ou récupère de nouvelles données, il le fait de manière asynchrone en utilisant généralement le XML sans faire attendre l’utilisateur en l’empéchant d’interagir avec l’application.
 
-## 3. Qui utilise Ajax ?
+**## 3. Qui utilise Ajax ?**
 
 Google investi énormément pour développer l’approche Ajax. Tous les produits phares que Google a introduit durant l’année passée, Orkut, Gmail et leurs dernières bêtas pour Google Groups, Google Suggest et Google Maps, toutes sont des application Ajax. 
 Les autres suivent leurs pas, les fonctionnalités préférés des utilisateurs Flickr dépendent d’Ajax et le moteur de recherche A9 d’Amazon utilisent des techniques similaires aussi.
@@ -61,7 +61,7 @@ Chez Adaptive Path, nous avons réalisé nos propres projets avec Ajax ces derni
 Ajax est un progrès très important pour les applications web et son importance ne va faire que se renforcer. 
 De nombreux développeurs connaissent déjà les technologies utilisées par Ajax, ainsi, de nombreuses autres entreprises et organisations devraient bientôt suivre les pas de Google en tirant parti des possibilités et avantages d’Ajax. 
 
-## 4. Pour aller de l’avant
+**## 4. Pour aller de l’avant**
 
 L’un des plus grands challenges dans la création d’application Ajax n’est pas d’ordre technique. Le noyau des technologies utilisées par Ajax est mature, stable et reconnue. Non, le challenge viendra des concepteurs de ses applications, ils devront oublier ce qu’ils savent des limitations actuelles du web pour découvrir les éventails de possibilités proposée par Ajax. 
 
