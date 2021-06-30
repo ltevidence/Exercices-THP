@@ -28,7 +28,7 @@ La plupart des actions de l’utilisateur sur l’interface lance une requête H
 C’est un modèle qui était adapté au premier usage du web c’est a dire un média traitant de l’hypertexte.
 Mais les aficionados de « The Elements of User Experience » le savent bien, ce qui fait que le Web est bon pour l’hypertexte n’est pas forcément bon pour une application logicielle.
 
-![Zozor](https://res.cloudinary.com/dcmcouvju/image/upload/v1625042888/Group_1_1_nejvrn.png)
+![Modèle classique d'application](https://res.cloudinary.com/dcmcouvju/image/upload/v1625042888/Group_1_1_nejvrn.png)
 Fig 1. Le modèle traditionnel d’application web (à gauche) comparé au modèle Ajax (à droite).
 
 Cette approche fait sens d’un point de vue technique, mais n’est pas forcément évidente en terme d’expérience utilisateur. Pendant que le serveur travaille de son côté, que fait le client ? 
@@ -45,6 +45,8 @@ Une application Ajax élimine cette nature « marche/arrêt/marche/arrêt » d
 On pourrait croire qu’ajouter une couche sur l’application la rendrait moins responsive mais c’est l’opposée. 
 Au lieu de charger la page web au debut de la session, le navigateur charge un Ajax engine, écrit en JavaScript et caché aux yeux de l’utilisateur. Ce moteur permet l’affichage de l’interface visuelle pour l’utilisateur mais aussi des requêtes et de la communications avec le serveur à la demande de l’utilisateur. L’Ajax engine permet à l’utilisateur de pouvoir mettre en place des interactions avec l’applications indépendamment des interactions avec le serveur. Ainsi, l’utilisateur ne se retrouve jamais face à une page de chargement en attendant que le serveur ne réagisse. 
 
+
+![Application Synchrone/Asynchrone](https://res.cloudinary.com/dcmcouvju/image/upload/v1625043031/Group_2_z6nijb.png)
 Fig 2. Le schéma d’interaction synchrone d’une application web classique (en haut) comparé au schéma asynchrone d’une application Ajax (en bas).
 
 Chaque action de l’utilisateur devrait normalement générer une requête HTTP mais prend ici la forme d’un appel JavaScript auprès de l’Ajax engine. Toutes réponses aux actions de l’utilisateur qui ne demanderait aucune nouvelle requête auprès du serveur, tel que la simple validation de données, éditer de la donnée en mémoire ou même de la simple navigation sur l’application, passe par le moteur Ajax. 
